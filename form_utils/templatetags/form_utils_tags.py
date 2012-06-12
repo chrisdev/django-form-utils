@@ -30,9 +30,9 @@ def render(form, template_name=None):
     ``form_utils/better_form.html`` will be used instead if present.
     
     """
-    default = 'form_utils/form.html'
+    default = 'form_utils/classic/form.html'
     if isinstance(form, (BetterForm, BetterModelForm)):
-        default = ','.join(['form_utils/better_form.html', default])
+        default = ','.join(['form_utils/classic/better_form.html', default])
     tpl = select_template_from_string(template_name or default)
 
     return tpl.render(template.Context({'form': form}))
