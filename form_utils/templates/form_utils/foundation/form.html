@@ -1,0 +1,18 @@
+{% block errors %}
+
+{% if form.non_field_errors %}
+    <div class="alert-box error">
+    {{ form.non_field_errors|join:"<br/>" }}
+    </div>
+{% endif %}
+{% endblock %}
+
+{% block fields %}
+<fieldset>
+<ul>
+{% with form as fields %}
+{% include "form_utils/fields_as_foundation.html" %}
+{% endwith %}
+</ul>
+</fieldset>
+{% endblock %}
