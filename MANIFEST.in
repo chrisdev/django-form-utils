@@ -4,6 +4,5 @@ include LICENSE.txt
 include MANIFEST.in
 include README.rst
 include HGREV
-recursive-include form_utils/templates/form_utils/foundation *
-recursive-include form_utils/templates/form_utils/classic *
+recursive-include form_utils/templates/form_utils *
 recursive-include form_utils/media/form_utils *
