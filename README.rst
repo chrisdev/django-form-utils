@@ -22,6 +22,12 @@ This application provides utilities for enhancing Django's form handling:
 
     4. An ``AutoResizeTextarea`` widget which auto-resizes to
        accomodate its contents.
+       
+
+Contributors
+-------------
+* `Christopher Clarke <https://github.com/chrisdev>`_
+
 
 Installation
 ============
